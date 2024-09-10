@@ -1,0 +1,57 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">4-5🈷️来重庆✅游玩看这一篇就够啦‼️</text>
+  <text>——————</text>
+  <text class="para">4-5🈷️真的很适合来重庆玩！大学生也完全可以！重庆景点很集中，而且非常适合穷游～不用担心钱包👛hold不住哦。热门景点都在渝中区，大家安排好游玩路线就可以✨如果有姐妹第一次来，可以参照这个路线哦！
+—
+
+🫧Day1:解放碑——白象居——来福士——洪崖洞
+
+🫧Day2:湖广会馆——长江索道——龙门浩老街——南滨路
+
+注意事项⚠️
+
+🫧Day3:鹅岭二厂——李子坝——重庆动物园——涂鸦一条街
+-
+住宿选择·
+
+📍解放碑:交通很方便，很多网红景点步行就可以到
+📍观音桥:很适合年轻人，夜生活体验upupup
+📍南滨路:江景房首选!整个重庆看夜景最美的地方
+📍沙坪坝: 适合学生党穷游党，附近小吃街性价比不错
+
+—
+🚗 交通选择·
+
+🚈轻轨:出行第一选择，大部分景点都可以到达，票价在2-7r
+
+🚌公交车:票价2r，不建议高峰期坐
+
+🚕出租车:白天起步价10元3公里，晚上11元3公里，记得让司机打表计费!
+🚗网约车:在正规平台就可，尽量不要坐机场、火车站附近的车，有很多黑车!</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">甘南旅游攻略｜4⃣天3晚路线｜组队咨询～</text>
+  <text>——————</text>
+  <text class="para">是一个不需要滤镜的地方。
+  放眼望去，
+  蓝天白云相依，
+  晴空万里在草原上，
+  河流马群相伴，
+  一览无余却又望不到尽头
+  也许很多人还不知道甘南
+  但甘南早已名扬海外
+  这里曾被美国权威旅游杂志评为：
+  “世界50个户外天堂之一”
+  被联合国人居环境发展促进会评为：
+  “中国最美的旅游胜地”
+  ———————
+  【5天4晚行程路线】
+  【特色】4-6日小团｜食宿全包｜纯玩
+  ｜随走随停｜不用早起
+  ————————
+  路线安排
+  D1：兰州——夏河拉卜楞寺（240KM）—桑科草原-东方瑞士郎木寺（184KM）。
+  D2:郎木寺—中国第二大草原若尔盖草原-九曲黄河第一湾（141KM）
+  D3:唐克—花湖—扎尕那（200KM）
+  D4:扎尕那—尕海—合作（251KM）
+  D5:合作-九层佛阁-兰州（218KM）
+  此线路基本涵盖甘南所有的精华景点，沿途风景丰富，景点不重复。
+  📒交通🚗
+  正规越野车和商务车，2-6人VIP小团，自由随性，一个也可拼车组队，司机兼领队，帮忙拍照，免费景区讲解。行程中组织游戏活动。
+  ⚠️拼车情况下酒店与车型都是指定的
+  包车时线路、车型，酒店类型可多项选择
+  📒住宿🏨
+  甘南藏区的酒店住宿条件与旅游发达城市还是有差距，我们选择的酒店能达到：
+  独立卫浴｜干净卫生｜Wi-Fi满格｜二十四小时热水｜属于同地区中高档酒店
+  📒饮食
+  甘南有众多美食，手抓羊肉，牦牛肉，酥油茶、奶茶，还有地道的川菜，西北特色多样选择
+  📒总结📒
+  【关于天气】
+  甘南早晚温差大，一年四季来都要带一件厚外套，女生快带长裙，拍照很好看，夏季除了短袖，还有防晒霜，帽子，墨镜等。
+  【关于高反】
+  甘南平均海拔三千左右，所以不需要担心高反，基本上不会发生。
+  📒增值服务
+  1⃣️：车内备矿泉水，水果等
+  2⃣️：备氧气瓶，常用药
+  3⃣️：领队景区免费讲解
+  4⃣️：免费拍照
+  5⃣️：特色美食
+  
+  
+  
+  </text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

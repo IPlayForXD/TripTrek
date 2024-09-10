@@ -1,0 +1,52 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">一人公共交通环西北！第一站:西宁</text>
+  <text>——————</text>
+  <text class="para">费用：
+🏠青旅两晚：96
+🍽️吃饭：104.5
+🚘交通：26
+报团（青海湖茶卡盐湖一日团含门票）：277
+
+🎫正常门票青海湖：90   茶卡盐湖：60
+
+🔻day1:晚上七点到达西宁，路边随便找了一家吃了炕锅羊肉（56r），公交1r去逛了莫家街，吃了德禄酸奶（6r），马忠食府（喝了杯西瓜汁15r，可以去吃酿皮），后去东关清真寺（太黑了没找到），清真寺旁边的下关南街（当地人的美食街，晚上九点已经差不多都已经关门了，九点连公交都差不多没了，后面走回青旅）
+
+🔻day2:报了青海湖茶卡一日团，住西宁
+（来之前本计划是早上8:30去汽车站坐大巴直达青海湖二朗剑景区，单程60r，玩到下午两三点去到候车点等去茶卡/乌兰的班车（车票41r），完后去茶卡盐湖，晚上住茶卡。后在青旅了解到一个小伙伴报一日团（不含门票）来回才128r，对比报团比较划算点，各有各的好处吧，跟团的话需要早上六点半到达集合点，晚上十点左右才回到西宁，属于早出晚归了，但玩的时间还是比较充裕的。
+
+🔻day3:西宁——格尔木
+
+‼️小Tips：茶卡盐湖是有三种交通方式的，1️⃣是小火车（108r来回），2️⃣轮船（138r船进火车出），火车跟轮船是包含脚套可以下盐湖，3️⃣就是我的徒步啦，跟着徒步指引一条直线走到底，边走边欣赏还是挺好的，也不是很远，火车会从旁边经过，火车也不是很快路上的景还不能下来拍照，需要到站才能下，108的火车票都比门票贵了觉得不值，看个人吧。吃了茶卡盐湖冰激凌🍦（15r）
+
+🌟西宁其他可以逛的：
+1️⃣塔尔寺门票70/人，公交909路直达4元
+2️⃣新千观光夜市
+3️⃣青海省博物馆、青海美术馆免费
+4️⃣青海藏文化博物馆（门票60/人）</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

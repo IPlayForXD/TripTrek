@@ -1,0 +1,118 @@
+<!--pages/home/home.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+
+<!--block代码-->
+<view class="container">
+  <view class="block left">
+    <view class="m_block">
+     <view class="s_block top-left" bind:tap="map">
+      <image src="/images/home/button/map.png" class="block_image"></image>
+      <text class="block_text">地图导航</text>
+     </view>
+     <view class="s_block top-right" bind:tap="hotel">
+      <image src="/images/home/button/hotel.png" class="block_image"></image>
+      <text class="block_text">酒店民宿</text>
+     </view>
+     <!-- <view class="s_block bottom-left" bind:tap="recommend">
+      <image src="/images/home/button/glass.png" class="block_image"></image>
+      <text class="block_text">攻略推荐</text>
+     </view> -->
+     <view class="s_block bottom">
+      <button open-type="feedback" class="view_button">
+        <image src="/images/icon/reflection.png" class="block_image"></image>
+        <text class="block_text">反馈意见</text>
+      </button>
+     </view>
+    </view>
+  </view>
+
+  <view class="block right">
+    <view class="m_block">
+     <view class="s_block top-left">
+      <button open-type="contact" class="view_button">
+        <image src="/images/icon/客服.png" class="block_image"></image>
+        <text class="block_text">客服交流</text>
+      </button>
+     </view>
+     <view class="s_block top-right" bind:tap="ai">
+      <image src="/images/home/button/ai.png" class="block_image"></image>
+      <text class="block_text">智能导览</text>
+     </view>
+     <view class="s_block bottom" bind:tap="luntan">
+      <image src="/images/home/button/luntan.png" class="block_image"></image>
+      <text class="block_text">交流论坛</text>
+     </view>
+     <!-- <view class="s_block bottom-right">
+      <image src="/images/home/button/gonglue.png" class="block_image"></image>
+      <text class="block_text">攻略定制</text>
+     </view> -->
+    </view>
+  </view>
+</view>
+
+
+<view class="location">
+  <view class="location_top">
+   <text class="location_top_text">热门景点</text>
+   <image src="/images/home/location/flag.png" class="location_top_image"></image>
+  </view>
+  <view class="location_option">
+    <view class="location_view" bind:tap="attraction_1">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/1.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_2">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/2.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_3">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/3.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_4">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/4.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_5">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/5.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_6">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/6.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_7">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/7.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_8">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/8.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_9">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/9.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_10">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/10.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_11">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/11.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_12">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/12.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_13">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/13.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_14">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/14.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_15">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/15.jpg" class="location_image"></image>
+    </view>
+    <view class="location_view" bind:tap="attraction_16">
+      <image src="cloud://cloud1-4gbcbb614f3e02c0.636c-cloud1-4gbcbb614f3e02c0-1324715525/home/attractions/16.jpg" class="location_image"></image>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,64 @@
+<!--pages/admin/admin.wxml-->
+<!-- 登录部分，别乱动 -->
+<view class="login">
+  <block wx:if="{{userInfo == null}}">
+    <view>
+      <button open-type="chooseAvatar" bindchooseavatar="getAvatar" class="block_login">
+        <image src="{{avatarUrl?avatarUrl:'/images/icon/face.png'}}" class="face_out"></image>
+      </button>
+    </view>
+    <form bindsubmit="login">
+      <input class="name_out" type="nickname" placeholder="请输入昵称" name="nickName"/>
+      <button form-type="submit" class="b">登录</button>
+    </form>
+
+  </block>
+  <block wx:if="{{userInfo != null}}">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button bindtap="logout" class="button-logout" class="b">退出登录</button>
+      <text class="userinfo-info">{{followingCount}} 关注 {{followerCount}} 粉丝</text>
+    </block>
+</view>
+
+<!-- 功能部分，别乱动 -->
+<view class="function">
+  <view class="function_1" bindtap="showContent" data-index="0">
+    <text class="like_text">喜欢</text>
+    <button class="button"></button>
+  </view>
+  <view class="function_2" bindtap="showContent" data-index="1">
+    <text class="favorite_text">收藏</text>
+    <button class="button"></button>
+  </view>
+  <view class="function_3" bindtap="showContent" data-index="2">
+    <text class="dynamic_text">动态</text>
+    <button class="button"></button>
+  </view>
+</view>
+
+<!-- 显示不同内容 -->
+<view wx:if="{{currentIndex == 0}}" class="content">
+  <!-- 喜欢的内容列表 -->
+  <view class="location_option">
+    <view wx:for="{{likedContents}}" wx:key="index" class="location_view" bindtap="attraction" data-url="{{item.url}}" data-id="{{item.image}}">
+      <image src="{{item.image}}" class="location_image"></image>
+    </view>
+  </view>
+</view>
+<view wx:if="{{currentIndex == 1}}" class="content">
+  <!-- 收藏的内容列表 -->
+  <view class="location_option">
+    <view wx:for="{{favoriteContents}}" wx:key="index" class="location_view" bindtap="attraction" data-url="{{item.url}}" data-id="{{item.iamge}}">
+      <image src="{{item.image}}" class="location_image"></image>
+    </view>
+  </view>
+</view>
+<view wx:if="{{currentIndex == 2}}" class="content_3">
+  <!-- 动态的内容 -->
+  <view class="location_option">
+    <view wx:for="{{dynamicContents}}" wx:key="index" class="location_view" bindtap="goToPostDetail" data-id="{{item._id}}">
+      <image src="{{item.image}}" class="location_image"></image>
+    </view>
+  </view>
+</view>

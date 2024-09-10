@@ -1,0 +1,182 @@
+/* pages/contents/contents.wxss */
+.container {
+  padding: 16rpx;
+  background-color: #f5f5f5;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 16rpx;
+  border-radius: 8rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.user-name {
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.follow-button {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: 8rpx 16rpx;
+  border: none;
+  border-radius: 16rpx;
+  background-color: #ff5722;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+
+
+.post-image {
+  width: 100%;
+  height: 1000rpx;
+  border-radius: 8rpx;
+  margin-bottom: 16rpx;
+}
+
+.post-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+
+.post-content {
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* 底部栏样式 */
+.bottom-bar {
+  margin-top: 50px; /* 添加与底部栏的间距，根据需要调整 */
+  position: fixed;
+  bottom: 20px; /* 与底部的间距，根据需要调整 */
+  width: calc(100% - 20px); /* 减去左右间距，根据需要调整 */
+  display: flex;
+  justify-content: space-between; /* 将按钮均匀分布在底部栏的两侧 */
+  background-color: #fff; /* 可根据需要设置底部栏背景颜色 */
+  padding: 5px; /* 可根据需要设置底部栏的上下左右边距 */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* 可根据需要设置底部栏的阴影效果 */
+}
+
+/* 按钮样式 */
+.like-button,
+.collect-button {
+  display: flex;
+  align-items: center; /* 垂直居中显示 */
+}
+
+.icon-like,
+.icon-collect {
+  width: 24px; /* 图标宽度，根据需要调整 */
+  height: 24px; /* 图标高度，根据需要调整 */
+  margin-right: 5px; /* 图标和文字之间的间距，根据需要调整 */
+}
+
+.text-like,
+.text-collect {
+  font-size: 14px; /* 文字大小，根据需要调整 */
+}
+
+.comments-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 添加水平居中显示 */
+  background-color: #ff6347; /* 设置背景色为红色 */
+  padding: 8px 16px; /* 增加按钮的内边距 */
+  border-radius: 20px; /* 添加圆角 */
+}
+
+.comments-button .text {
+  font-size: 24px; /* 增大文字大小 */
+  color: white; /* 设置文字颜色为白色 */
+  text-align: center; /* 文字居中 */
+}
+.comment-modal {
+  position: fixed;
+  bottom: 150rpx; /* 底部栏高度 */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.comment-input {
+  height: 200rpx;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.confirm-button,
+.cancel-button {
+  width: 45%; /* 设置按钮宽度 */
+  padding: 10px;
+}
+/* 评论区域样式 */
+.comments-section {
+  margin-top: 20px;
+  padding: 0 20px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+/* 单条评论样式 */
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+/* 头像样式 */
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* 评论内容样式 */
+.comment-content {
+  flex: 1;
+}
+
+/* 用户名样式 */
+.comment-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* 评论文字样式 */
+.comment-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

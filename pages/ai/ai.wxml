@@ -1,0 +1,18 @@
+<view class="container">
+  <scroll-view class="city-scroll" scroll-y="true">
+    <view wx:for="{{cities}}" wx:key="index" class="city-item" bindtap="changeCity" data-city="{{item}}">
+      {{item}}
+    </view>
+  </scroll-view>
+  
+  <scroll-view class="strategies" scroll-y="true">
+    <view class="spot-list" wx:if="{{points.length > 0}}">
+      <block wx:for="{{points}}" wx:key="id">
+        <button class="strategy-item" bindtap="navigateToSpot" data-spot="{{item}}">{{item.name}}</button>
+      </block>
+    </view>
+    <view wx:else>
+      <text class="no">暂无推荐攻略</text>
+    </view>
+  </scroll-view>
+</view>

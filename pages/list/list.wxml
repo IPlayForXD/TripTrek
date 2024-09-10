@@ -1,0 +1,22 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <!-- 帖子列表 -->
+  <view class="posts-container">
+    <view wx:for="{{postList}}" wx:key="postId" class="post-item" bindtap="goToPostDetail" data-id="{{item._id}}">
+      <!-- 帖子内容 -->
+      <image src="{{item.image}}" class="post-image"></image>
+      <text class="post-title">{{item.title}}</text>
+      <!-- 其他帖子信息，比如作者、时间等 -->
+      <view class="user-info">
+      <image class="user-avatar" src="{{item.avatarUrl}}"></image>
+      <text class="user-name">{{item.nickName}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 固定在页面底部的发帖按钮 -->
+  <view class="post-button-container">
+    <button class="post-button" bindtap="goToPostPage">发帖</button>
+  </view>
+</view>
+

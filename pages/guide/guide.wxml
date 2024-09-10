@@ -1,0 +1,34 @@
+<!--pages/guide/guide.wxml-->
+<view class="container">
+  <map id="map"
+    subkey="{{subKey}}"
+    style="height: 100%; width: 100%;"
+    show-location="true"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    scale="{{18}}"
+    markers="{{markers}}"
+    circles="{{circles}}"
+    polygons="{{polygons}}"
+    polyline="{{polylines}}"
+    enable-3D="{{enable3D}}"
+    show-compass="{{showCompass}}"
+    enable-zoom="{{enableZoom}}"
+    enable-rotate="{{enableRotate}}"
+    enable-satellite="{{enableSatellite}}"
+    enable-traffic="{{enableTraffic}}"
+    enable-overlooking="{{enableOverlooking}}"
+    enable-scroll="{{enableScroll}}"
+    bindmarkertap="handleMarkerTap"
+  >
+    <block wx:for="{{markers}}" wx:key="id">
+      <marker id="{{item.id}}" latitude="{{item.latitude}}" longitude="{{item.longitude}}" />
+    </block>
+    <block wx:for="{{polyline}}" wx:key="index">
+      <polyline points="{{item.points}}" color="{{item.color}}" width="{{item.width}}" />
+    </block>
+  </map>
+  <scroll-view class="info-box" scroll-y="{{true}}" scroll-with-animation="{{true}}" style="height: 30vh;">
+    <text>{{text}}</text>
+  </scroll-view>
+</view>

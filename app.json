@@ -1,0 +1,154 @@
+{
+  "pages": [
+    "pages/strat/start",
+    "pages/admin/admin",
+    "pages/home/home",
+    "pages/list/list",
+    "pages/ai/ai",
+    "pages/contents/contents",
+    "pages/map/map",
+    "pages/guide/guide",
+    "pages/submit/submit"
+  ],
+  "subPackages": [
+    {
+      "root": "attraction_1",
+      "pages": [
+        "pages/attractions/attraction_1"
+      ]
+    },
+    {
+      "root": "attraction_2",
+      "pages": [
+        "pages/attractions/attractions_2"
+      ]
+    },
+    {
+      "root": "attraction_3",
+      "pages": [
+        "pages/attractions/attractions_3"
+      ]
+    },
+    {
+      "root": "attraction_4",
+      "pages": [
+        "pages/attractions/attractions_4"
+      ]
+    },
+    {
+      "root": "attraction_5",
+      "pages": [
+        "pages/attractions/attractions_5"
+      ]
+    },
+    {
+      "root": "attraction_6",
+      "pages": [
+        "pages/attractions/attractions_6"
+      ]
+    },
+    {
+      "root": "attraction_7",
+      "pages": [
+        "pages/attractions/attractions_7"
+      ]
+    },
+    {
+      "root": "attraction_8",
+      "pages": [
+        "pages/attractions/attractions_8"
+      ]
+    },
+    {
+      "root": "attraction_9",
+      "pages": [
+        "pages/attractions/attractions_9"
+      ]
+    },
+    {
+      "root": "attraction_10",
+      "pages": [
+        "pages/attractions/attractions_10"
+      ]
+    },
+    {
+      "root": "attraction_11",
+      "pages": [
+        "pages/attractions/attractions_11"
+      ]
+    },
+    {
+      "root": "attraction_12",
+      "pages": [
+        "pages/attractions/attractions_12"
+      ]
+    },
+    {
+      "root": "attraction_13",
+      "pages": [
+        "pages/attractions/attractions_13"
+      ]
+    },
+    {
+      "root": "attraction_14",
+      "pages": [
+        "pages/attractions/attractions_14"
+      ]
+    },
+    {
+      "root": "attraction_15",
+      "pages": [
+        "pages/attractions/attractions_15"
+      ]
+    },
+    {
+      "root": "attraction_16",
+      "pages": [
+        "pages/attractions/attractions_16"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "TirpTrek",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "2C9FF",
+    "backgroundColor": "F7F7F7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/admin/admin",
+        "iconPath": "images/icon/admin.png",
+        "selectedIconPath": "images/icon/admin_selected.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_selected.png",
+        "text": "首页"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序定位"
+    }
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.18",
+      "provider": "wx50b5593e81dd937a"
+    }
+  }
+}

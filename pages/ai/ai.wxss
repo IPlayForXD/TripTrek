@@ -1,0 +1,65 @@
+/* 通用样式 */
+
+/* 容器样式 */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+}
+
+/* 城市列表样式 */
+.city-scroll {
+  width: 20%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.city-item {
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.city-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* 攻略列表样式 */
+.strategies {
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+  overflow-y: auto;
+  padding: 20rpx;
+  background-color: #f9f9f9;
+}
+
+.strategy-item {
+  display: block;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 32rpx;
+  transition: transform 0.3s;
+}
+
+.strategy-item:hover {
+  transform: translateY(-5px);
+}
+
+.no {
+  text-align: center;
+  font-size: 28rpx;
+  color: #888;
+}

@@ -1,0 +1,9 @@
+<!-- pages/submit/submit.wxml -->
+<view class="container">
+  <input placeholder="请输入标题" bindinput="inputTitle" value="{{title}}" />
+  <textarea placeholder="请输入内容" bindinput="inputContent">{{content}}</textarea>
+  
+  <button bindtap="chooseImage">选择图片</button>
+  <image src="{{image}}" mode="aspectFit" wx:if="{{image}}" />
+  <button bindtap="submitForm">提交</button>
+</view>

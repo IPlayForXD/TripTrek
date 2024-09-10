@@ -1,0 +1,62 @@
+/* pages/attractions/attraction_1/attractions_1.wxss */
+.swiper-item {
+  height: 1000rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 水平居中对齐 */
+}
+
+.container {
+  height: 1500rpx;
+  width: 100%;
+  margin-top: -150rpx; /* 减少Swiper组件顶部的空间 */
+  margin-bottom: -500rpx;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中对齐 */
+  height: 100vh; /* 让文本内容占据整个屏幕高度 */
+  padding: 20rpx; /* 设置内边距 */
+}
+
+.title {
+  font-size: 28rpx; /* 设置标题字体大小 */
+}
+
+.para {
+  font-size: 24rpx; /* 设置段落字体大小 */
+}
+
+/* 底部栏样式 */
+.bottom-bar {
+  margin-top: 50px; /* 添加与底部栏的间距，根据需要调整 */
+  position: fixed;
+  bottom: 20px; /* 与底部的间距，根据需要调整 */
+  width: calc(100% - 20px); /* 减去左右间距，根据需要调整 */
+  display: flex;
+  justify-content: space-between; /* 将按钮均匀分布在底部栏的两侧 */
+  background-color: #fff; /* 可根据需要设置底部栏背景颜色 */
+  padding: 5px; /* 可根据需要设置底部栏的上下左右边距 */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* 可根据需要设置底部栏的阴影效果 */
+}
+
+/* 按钮样式 */
+.like-button,
+.collect-button {
+  display: flex;
+  align-items: center; /* 垂直居中显示 */
+}
+
+.icon-like,
+.icon-collect {
+  width: 24px; /* 图标宽度，根据需要调整 */
+  height: 24px; /* 图标高度，根据需要调整 */
+  margin-right: 5px; /* 图标和文字之间的间距，根据需要调整 */
+}
+
+.text-like,
+.text-collect {
+  font-size: 14px; /* 文字大小，根据需要调整 */
+}

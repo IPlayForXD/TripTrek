@@ -1,0 +1,61 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">甘南自驾｜4天3晚全攻略，不做大冤种</text>
+  <text>——————</text>
+  <text class="para">刚回来～自己淋过雨，也想给别人撑把伞～
+🌟🌟🌟【行程篇】
+Day1：兰州-拉卜楞寺-甘加秘境-夏河
+Day2：夏河-桑科草原-郭莽湿地-郎木寺-唐克
+Day3：唐克-若尔盖草原-黄河九曲第一湾-扎尕那
+Day4：扎尕那-洛克之路-兰州
+
+🌟🌟🌟【景点篇】
+1️⃣拉卜楞寺：门票40/人（步行街进去免门票
+2️⃣甘加秘境：门票80/人（导航癿石秘境免门票
+3️⃣桑科草原：免费
+4️⃣郭莽湿地：免费
+5️⃣郎木寺：门票30/人（编藏辫我们编的10元7条，后来玩完下去发现1元1条）
+6️⃣若尔盖草原：免费。（骑马体验，最远的地方80/人，讲价成功，60）
+7️⃣黄河九曲第一湾：门票+电梯120/人
+8️⃣扎尕那：门票80/人（高德地图买便宜几块钱）仙女滩看日落，达日观景台看日出，6月日出时间是早上6~7点。仙女湖没必要去。扎尕那里面不要随便停车，一停就是10块钱停车费。
+9️⃣洛克之路：免费。（我们从扎尕那出发的，导航目的地扎古录镇，一路上路况还可以，没有网上说的那么糟糕，修路也就停车等待几分钟。3小时走完蕞佳风景线）
+
+🌟🌟🌟【住宿篇】
+▪️夏河：木雅藏家民宿（挺好的，再去会再住的那种
+▪️唐克：若盖尔星途智享酒店（一般，不会再住
+▪️扎尕那：迭部扎尕那迭山精品民宿（还可以，装修比较新，性价比高
+
+🌟🌟🌟【吃饭篇】
+夏河：
+🍽️乌泽林卡餐厅，夏河评分No.1，绝大部分人都说很好吃。我们也是跟风来的。餐厅装修挺好，建议开车到餐厅门口。坡下离餐厅还挺远的，走上去很累。我们4个人点了个340多的4人套餐。都是第1次吃藏餐，也不知道正不正宗，大家的感受都很一致：太油腻，吃的不是很满意。
+🥘马虎城美食城：看着顺眼随便去的，味道不错，很下饭，体验感可以。
+其余几天好几顿都是在景区周边或高速服务区吃的，差不多都吃的川菜，挺好的也没踩雷，不多说。
+
+
+</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">西宁｜三天两夜人均400不到‼️</text>
+  <text>——————</text>
+  <text class="para">🔴交通：
+兰州→西宁：火车32.5元 约3h 高铁 58元约2h17
+🟣住宿：
+梦里七八青旅（公交27路 五一桥西下）36元/晚，环境可以适合学生党
+🔸DAY1⃣️：中午到随便吃了个午饭→下午#青海省博物馆 约1.5h→美术馆→晚饭（可以去下南关街当地人的美食街）
+🔸DAY2⃣️：报团游#青海湖 ➕#茶卡盐湖 （100元/人），不过跟团游不包括门票，目前青海湖不要门票，盐湖mei团98元包含往返小火车，浙江市民免门票。不过这时候的青海湖和茶卡盐湖不是特别好看，建议大家七八月份再来。
+🔸DAY3⃣️：#塔尔寺 很值得去看看 国家5A景点 是中国藏传佛教黄教六大寺院之一。注意⚠️不能穿拖鞋 短裤 短裙、不能戴墨镜进去‼️
+🔺交通：坐909路 终点站下4元约2h。
+🔺门票70，学生半价，门口可以租藏服50左右一套（贵了就砍价！）包括妆容➕头饰，拍照很出片很漂亮～
+🟠美食：
+🔻下南关街有很多美食，有酿皮，甜醅，三角粽，羊肠，酸奶，烤囊…真的好多吃的，本地人去的特别多
+晚上八点，陆陆续续就关门了
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
+斋月好多店没开门或者关门很早，去吃饭看着点，不然有可能扑空。
+不过斋月快结束了🔚</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>
