@@ -1,0 +1,52 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">成都熊猫谷-都江堰一日游！（建议直接抄‼️）</text>
+  <text>——————</text>
+  <text class="para">交通🚄：
+成都犀浦站➡️离堆公园站（10💰车程30min）
+建议买最早的一班车和最晚一班车！因为早上七八点大熊猫最活跃，晚上蓝眼泪8点才开灯！
+（然后一定要提前买！不然只有站票 ，一整天暴走下来很累！）
+
+景点📷：
+1⃣️仰天窝广场
+从离堆公园站一出来就是了，打卡迪丽热巴同款大熊猫，快速打卡完就打车去熊猫谷（15分钟车程）
+
+2⃣️熊猫谷（门票55💰）
+一定要早点去！我中午才到，熊猫全都睡觉了😭熊猫谷不算大，而且绿树成荫，并且是单循环线路，走起来不是很累。
+一直走到园区尽头才到小熊猫放养区，不得不说小熊猫太可爱了！运气好还能近距离拍照！
+
+3⃣️都江堰：（门票80💰）
+熊猫谷过去也是15分钟车程，‼️一定要导航秦堰楼，这里是最高处，可以俯瞰都江堰全景，特别震撼！然后就是全程下坡路，走到下面还可以乘坐观光车，10💰一人。
+个人小建议‼️：如果对都江堰不太了解的姐妹，可以在景区门口请个讲解，200💰，讲得很详细！而且全程带着你走，不怕漏了也不怕走回头路。
+
+4⃣️灌县古城
+由五个街道组成，蛮多小吃美食的～一定要去文庙街打卡（p7-8）很复古很好拍！晚上我吃了钟鸭子,甜皮鸭真的好好吃，现在想起来还流口水🤤
+
+5⃣️南桥
+就在灌县古城里面，蓝眼泪八点开灯，拍照非常出片！一定要开闪光灯拍～</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

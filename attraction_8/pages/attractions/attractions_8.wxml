@@ -1,0 +1,71 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">懒人版|成都3天2夜旅游攻略敲详细</text>
+  <text>——————</text>
+  <text class="para">😌趁着寒假快快和你闺蜜来成都玩吧~
+给大家总结记录了我的详细懒人版行程❗
+✔上周和闺蜜来玩真的超开心~
+-
+💠成都1月天气
+⛅️白天平均10°C
+⛅️夜间平均5°C
+🧣建议穿搭:长袖、长裤、毛衣、卫衣、外套、平底鞋
+-
+🚥｜来市区怎么出行
+地铁
+公交
+共享单车:起步价1.5r
+打车🚗
+-
+⚠️出游小建议
+①成都的美食偏辣，不能吃辣和肠胃不好的姐妹们，建议随身带点肠胃药
+②青羊宫门口有许多算命的，不要相信
+③出行首选地铁出行不堵车还实惠快捷
+④一定要提前预订住宿及大交通
+-
+🥹成都美味
+✔️回 味 冒 烤 鸭👍🏻牛 市 口
+一份里边有很多配菜，再加上一份灵魂方便面，巨香！
+-
+✔️无 名 蹄 花👍🏻春 熙 路
+蹄花都太好吃了 炖的软烂脱骨 肥而不腻 真的百吃不厌
+-
+✔️黑 石 乡 村 柴 火 鸡👍🏻春 熙 路
+他家柴火鸡连鸡皮都软糯q弹，而且充满了胶质感，好好7
+-
+✔️无 名 冒 菜👍🏻建 设 路
+在建设路，这家冒菜绝了！真的超好吃，分量非常足
+-
+✔️黄 孃 甜 不 辣👍🏻魁 星 楼
+成都本土人气旺！又甜又辣的酱汁真的好吃！
+-
+✔️伍 妹 冒 烤 鸭👍🏻宽 窄 巷
+鸭皮油滋滋的超香，鸭肠脆berber的超爱！
+-
+这份懒人版攻略已送达！！</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

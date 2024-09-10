@@ -1,0 +1,70 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">四川成都｜大学生3天2晚人均400攻略✅</text>
+  <text>——————</text>
+  <text class="para">👱🏻‍♀️hi，大家好，我是婉儿，有个旅行梦。五一快到啦‼️欢迎大家来成都旅行，下面给大家分享了成都3天2晚/5天4晚的攻略~
+
+💰3天2晚大致:
+景区门票：25（杜甫草堂学生票）+25（武侯祠学生
+票）=50
+吃吃喝喝：大概200
+公共交通：大概60
+住宿青旅：两晚大概120
+共计：50+200+60+120=430
+
+✅day1：
+▪️春熙路+国金中心+太古里：逛逛就好了
+▪️人民公园：大家一定要来这里喝茶🍵采耳，感受一下成都的慢生活，还有相亲角！
+▪️宽窄巷子：有“宽巷子”、“窄巷子”、“井巷子”三条街组成，里面有很多店。
+▪️玉林路citywalk：这里非常适合citywalk，赵雷歌里的【小酒馆】就在这里喔！
+
+✅day2：
+▪️成都市博物馆：🆓，记得要提前预约喔！
+▪️文殊院：院外的红墙、黄墙很出片喔！可以做志工，吃免费的斋饭。
+▪️建设路：成都小吃街，小吃很齐全，晚上人很多，但是有点小贵啦！
+▪️九眼桥：有个“安顺廊桥”很出片，可以拍拍照📸有一条酒吧街，大家可以过去玩～
+
+✅day3：
+▪️杜甫草堂：门票50，学生票半价，这是我国唐代大诗人杜甫为避“安史之乱”，携家带口辗转来到成都后修建的住所。
+▪️武侯祠：门票50，学生票半价，一定要来武侯祠感受三国文化、蜀国英雄！旁边就是锦里古街，可以一起逛了。
+▪️锦里：就在武侯祠旁边！很多吃吃喝喝的，这里晚上拍照很出片📸！
+
+⚠️注意：
+如果5️⃣天4️⃣晚，除了上面的3天，剩下两天可以去都江堰。
+✅day4:熊猫谷➡️仰天窝广场➡️都江堰➡️南桥
+✅day5:青城后山
+
+⚠️注意：
+1. ✅能选双流机场，❌别选天府机场
+2. 记得提前xz“天府通”喔！（地铁+公交都很方便）
+3. 打车起步价一般8/9r，23点以后会加收1元，节假日在景区附近打车会非常堵。
+4. 不建议自驾，节假日会堵车，影响旅游体验。
+5. 节假日❌别去熊猫基地，人多到爆🔥
+6. 以上需提前预约的景点：成都市博物馆+杜甫草堂+武侯祠+熊猫谷+都江堰+青城后山…
+7. 成都吃吃喝喝：火锅、兔头、蹄花汤、甜水面、烤苕皮、鹤鸣茶馆…</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">📍兰州｜大学生旅游攻略（超详细附美食）</text>
+  <text>——————</text>
+  <text class="para">淡季旅游真的太太太爽了😍为了平时省钱又考虑到好玩，我和朋友直冲兰州，感受金城的魅力🚄
+
+🚄路线安排
+
+Day1:下午到达兰州➡️酒店➡️甘肃省博物馆➡️中山桥➡️大众巷➡️酒店
+Day2:水墨丹霞➡️兰州大学➡️黄河母亲巷➡️白塔山公园➡️中山桥
+Day3:敦煌艺术馆➡️吃阿西娅➡️🚄➡️足浴😌
+
+✅关于甘肃省博物馆
+需要提前三天预约，我们是周四去的所以人不是很多。馆内有三楼，主要分为古生物，丝绸之路文化，教文化和甘肃革命文化。看到了初中历史书封面马踏飞燕最后馆出口有集章，喜欢收集的uu记得带上小本子哦
+✅关于住宿
+建议住再城关区，去哪里都很方便。
+
+✅关于中山桥
+我们是五六点去的，赶上了中山桥的日落和夜景。傍晚的时候🌆在黄河边波光粼粼的拍照超级出片！现在黄河的水还不是那么黄。晚上人比较多，但黄河的风垂着超级舒服，还有露天唱歌🎤的，氛围很舒服。📷河边有那种路拍的，10r/张（应该水平参差不齐吧，我拍的不好看😭，但觉得拍了这么久又不好意思，还是硬选了一张）
+
+✅关于水墨丹霞
+携程前一天电话☎️预约，85/人（8人的小团）包来去车、景区门票和观光车。💡接送的车在甘肃省博物馆门口，uu们也可以选择回来后下午直接去博物馆就不需要绕路啦！太阳有点大建议选择早上出行。四月份去的话穿搭建议里面夏装外面套个薄外套有风的时候超级出片，很有生命力！
+
+✅关于黄河母亲雕像
+没有太沿黄河边，但作为兰州的标志性建筑还是有必要去打卡的。去完后可以沿着这条路走就又可以到达中山桥黄河边那一带。
+
+✅关于兰州大学
+城关校区更近一点，校区面积不是很大，但建筑也很好看拍照📷也很出片。官方是需要预约才可以进去，可是我们选择的时候好像已经超过时间了，就跟着前面的人进去参观了一圈
+
+✅关于敦煌艺术馆
+不需要预约直接进去。因为时间不够所以没去莫高窟，但敦煌艺术馆很有性价比😉敦煌色，一眼万年，仿佛穿越时空感受佛教文化和这份历史的厚重感。
+
+✅关于美食😋
+图片附上我对这些美食的评价。
+🌈必🍽️吃榜
+1️⃣兰与茶 甜醅子奶茶
+2️⃣放哈 浆水
+3️⃣酿皮
+4️⃣酸奶
+餐厅🍴阿西娅｜兰州特色里面都有，分量很足两个人团的美团双人券根本吃不完，服务态度和环境也都特别好</text>
+</view>
+
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

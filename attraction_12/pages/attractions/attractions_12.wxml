@@ -1,0 +1,97 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">杭州三日攻略丨路线景点Citywalk全规划✅</text>
+  <text>——————</text>
+  <text class="para">接下来的杭州，是国内旅行的天花板🆘
+Day1️⃣
+河坊街
+是条步行街，有很多年代感满满的小铺
+门票🎫：🈚
+交通🚇：地铁7号线吴山广场D口
+南宋御街
+是南宋都城临安铺设的一条主要街道
+沿街还保留着杭州老城墙
+鼓楼
+杭州重要地标之一，始建于五代南朝用来抵御外敌
+十五奎巷
+来感受下杭州朴实的人间烟火气❗️
+远眺鼓楼的绝美机位🆘
+导航搜“巴尔干客栈”就ok了
+前面是烟火小巷背景是古风建筑，新旧交融很有视觉冲击力
+-
+Day2️⃣
+开启西湖之旅❗️
+可以上岛的游船码头有很多个：
+35💰可往返：苏堤、花港观鱼、中山公园、钱王祠、杭饭、岳庙
+50💰可往返：青少年宫、二公园、五公园、一公园
+注：上岛费需20💰
+三潭印月
+「我心相印亭」是一定要来打卡的地方❗️
+正对着西湖和三塔的一个圆拱门和两扇花型窗户刚好可以拍到石塔和西湖
+这时候只要等待一艘游船驶入画面就直接出片啦
+花港观鱼
+现在这个季节来西湖正合适
+这里的早樱、郁金香和玉兰花开了❗️
+苏堤
+除了花港观鱼，这也是个赏樱在合适不过的的地方
+西泠桥
+z美转角就在这里❗️
+天气好的日子来这里拍照都很出片
+平湖秋月
+看小桥流水，风吹连波
+尤其是远观小舟从青山绿水中出来，像活动的山水画
+断桥残雪
+来了西湖但不来断桥等于白来❗️
+断桥旁的星巴克二楼拍照也很出片哦
+武林夜市
+贵州糯米饭、东北锅包肉、传统米酒、喷泉牛杂都很推荐哦
+-
+Day3️⃣
+法华寺
+比灵隐寺还要古老的千年古刹，
+财神庙
+民间称为「天下第一财神庙」
+门票🎫8 现金或扫码都可
+敲钟💰30 可以敲9次，钟声一响，黄金万两
+请香💰30
+营业时间：07:30-17:00
+韬光寺
+游客不是很多，寺里很干净，没有世俗气息
+寺内有素面💰28-38
+营业时间：07:00-18:00
+永福寺
+就在灵隐寺隔壁
+福泉茶院可以品尝到寺内僧人采摘的龙井茶😀
+灵隐寺
+来杭州一定要来一趟灵隐寺
+门票🎫：35
+营业时间：07:00-18:00
+法喜寺
+可以看到成片的玉兰花开</text>
+</view>
+
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

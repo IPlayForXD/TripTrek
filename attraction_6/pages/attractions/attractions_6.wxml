@@ -1,0 +1,54 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">五一来重庆，终于有人把地图画清楚了✔</text>
+  <text>——————</text>
+  <text class="para">去了重庆三次后，😌😌😌终于总结出来了适合重庆游玩的旅游攻略，尤其适合没有来过重庆的小伙伴们，包含了吃住行等各方面，熟读这一篇攻略就足够了，让你在重庆玩的舒舒服服~👌👌👌
+🔴图1：重庆景点地图
+🔴图2：重庆三天两夜行程安排
+🔴图3：重庆景点合集
+🔴图4：重庆热门景点打卡
+🌈重庆温度＆穿搭：
+🔷4月：在15~25℃，穿着轻薄的长袖或短袖，搭配薄外套或风衣
+🔷5月：在20~30℃，穿着轻薄的长袖或短袖，搭配薄外套
+🔷6月：在25~35℃，穿着短袖、短裤或裙子，并搭配遮阳帽和太阳镜
+👀【以下是给大家整理去重庆旅游的文案分享】
+1⃣🎨🖌🧑‍🎨浪漫尽情涂鸦
+2⃣又双叕来重庆了
+3⃣火锅可要趁热吃🥢
+4⃣🚏重庆街头巷尾
+5⃣山城历险记
+6⃣“带着一身火锅味满载而归”𓌉🍲𓇋
+7⃣📍𝑪𝒉𝒐𝒏𝒈𝒒𝒊𝒏𝒈
+🚄我从远方而来 赴你一面之约
+8⃣来重庆耍一哈子 👍巴适得很
+😋重庆好吃的火锅店：
+✨田棒棒火锅（解放碑店）：好吃不辣胃，牛杂拼盘、冷锅鸭血
+✨丁孃孃火锅（洪崖洞店）：提供微微辣口感，孃孃滑肉片、手工苕粉
+✨华一坡蓉姐火锅：鲜毛肚、生扣鸭肠
+✨仪表厂火锅：菜品新鲜，鱼籽虾滑、鲜鸭血</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

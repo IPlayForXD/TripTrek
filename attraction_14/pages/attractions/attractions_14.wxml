@@ -1,0 +1,64 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">兰州两日游攻略📍这里绝不止黄河和牛大❗</text>
+  <text>——————</text>
+  <text class="para">🔆旅游攻略终于终于终于出到我的家乡篇——
+【甘肃大环线系列】了‼️‼️‼️
+
+🔥作为旅行目的地，甘肃我真的愿意推给所有人‼️
+
+🌁自然风光方面，甘肃是中国最多元最包罗万象的省份，自然中所有的地理地貌景观，除了大海，其余所有在甘肃都有！（雪山冰川、高山草原、河流峡谷、戈壁大漠...)
+
+🗻人文情怀方面，各种历史文化民族宗教在这里交互融合碰撞，从这里走出去的故事和人，都有一股说不上来的倔强执拗和生命力的张狂傲慢，我爱这股劲儿，也爱这片滋养我的大地。
+
+🚦甘肃是一个适合长假出行自驾游的旅行目的地，很多自然风景都在路上，非常适合五月到十月期间自驾，风景绝美‼️（冬春会比较冷略微荒凉，除了奔着雪山，其他不是特别建议）
+
+📸兰州城内本身其实没有太多景点，外地朋友专门来一趟不划算，但适合作为青甘大环线的第一站or最后一站用来修整放松会非常奈斯‼️
+
+💌之后会出完整的甘肃环线自驾攻略，几乎覆盖甘肃全境，都是和最喜欢的人自驾，体验感满分的那种！
+
+‼️攻略是两日游版，可自行根据时间/爱好增减行程哦~
+
+🎈老规矩文字太多，仍是以图片形式附上，戳图即可，dddd精华都在图里！比我写硕士论文都认真详细！敢说是全网最认真最用心的良心之作了❗️
+
+具体包括交通住宿，时间安排，路线规划，游玩tips及吃喝推荐。以下是超精简版提纲‼️
+
+📍路线规划
+D1：到达→酒店→甘肃博物馆→黄河母亲雕塑→白塔山公园→中山桥→正宁路夜市
+D2：敦煌艺术馆→水车博览园→读者大道读者杂志社→兰州市博物馆→兰山公园→张掖路夜市
+📍交通住宿
+📍景点tips
+📍吃吃喝喝（超级推荐的一些大店小店和路边摊儿，不说避雷了本地人不踩雷hhh，跟着我吃就对了~）
+牛肉面，干锅，麻辣烫，马三洋芋片，金城老顾家砂锅，大漠烤肉，白记炒牛犊，天元小吃，放哈·甜胚子奶茶，杏皮茶，胡萝卜素，牛奶鸡蛋醪糟，风琴秘制甜食，各种锅盔和大饼
+🔆甘肃真的是一个被低估的旅游城市，可能由于很多原因，旅游业发展的没有很好，但是真的很值得来‼️（甘肃人都很爽快大气热情，街上随便问路，大家知道的话都会热情回应的~
+
+🌘西北的风吹在兰州，抚过每一个故人和游人的心。
+
+💃祝大家旅途愉快，好吃好玩的欢迎补充‼️评论区见‼️</text>
+</view>
+
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

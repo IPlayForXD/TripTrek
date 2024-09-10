@@ -1,0 +1,64 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">杭州旅游回来后❤用心整理分享杭州旅行攻略</text>
+  <text>——————</text>
+  <text class="para">💯杭州旅游攻略～建议收藏备用哦~
+🌈送给来计划来杭州旅游的姐妹👭‼
+——————
+⭕交通指南
+飞机：萧山国际机场，距市中心27公里
+☑机场大巴: 在机场候机楼到达厅8号门。
+☑地铁:地铁7号线到市区，运营时间:06:16分--22:50分
+☑滴滴打车: 出租车、网约车约80-100元，45分钟到西湖
+火车站/高铁交通：杭州站、杭州东站和杭州南站
+☑火车站：杭州站，到西湖坐出租只要10分钟，杭州主要的火车站
+☑高铁站:杭州东站、杭州南站，以高铁动车为主，离市区也比较近，去萧山的话可以选杭州南站
+——————
+🛑杭州必打卡景点
+1⃣西湖
+📍地址: 杭州市西湖风景名胜区
+2⃣灵隐寺
+📍地址：西湖区灵隐路法云弄1号
+3⃣雷峰塔
+📍地址：西湖区南山路15号
+4⃣西溪国家湿地公园
+📍地址：西湖区天目山路518号（周家村入口）
+5⃣乌镇
+📍地址：嘉兴桐乡市乌镇石佛南路18号
+——————
+🛑杭州4天：
+⛳第一天：抵达杭州机场/车站，专人接机（站）或者自驾
+晚上自由活动可前往：南宋御街，河坊街夜市小吃街🍣🍢
+⛳第二天：游览【西溪湿地】电影【非诚勿扰】取景地，乘车前往【乌镇西栅】感受水乡风情
+⛳第三天：乌镇乘车赴享有【湖笔之都】的【南浔】，风光旖旎，游览与灵隐寺齐名的南朝古寺【福严寺】～游览【西塘】（国家5A 景点，历史文化名镇，最具水乡魅力影视基地），望仙桥，来凤桥，五福桥，卧龙桥，种福堂，尊闻堂，薛宅等明清时期的建筑
+⛳第四天：赴杭州【新白娘子传奇】取景地，杭州标志性景点【西湖】，乘游船观西湖十景，漫步苏堤，雷锋夕照，平湖秋月等！
+——————
+⭕杭州美食
+东坡肉、西湖醋鱼、杭州小笼包、龙井虾仁、猫耳朵、葱包烩、藕粉、叫化童鸡、知味小笼、叫化童子鸡、定胜糕、片儿川、干炸响铃等等
+——————</text>
+</view>
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>

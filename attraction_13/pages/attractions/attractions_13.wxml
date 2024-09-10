@@ -1,0 +1,64 @@
+<!--pages/attractions/attraction_1/attractions_1.wxml-->
+<!-- swiper代码 -->
+<swiper indicator-dots="{{indicatorDOTS}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"class="container">
+  <view wx:for="{{background}}" wx:key="*this"> <!-- 将 block 替换为 view -->
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </view> <!-- 将 block 替换为 view -->
+</swiper>
+
+<!-- text代码 -->
+<view class="text">
+  <text class="title">我的春节这样过｜杭州一日游：灵隐西湖路线</text>
+  <text>——————</text>
+  <text class="para">如果你春节假期来杭州游玩的一定要注意了‼️特别是去灵隐寺和西湖景区的，一定要看看这份“详细路线指南攻略”，供你游玩参考，赶快来看看吧：上午寺庙+下午西湖赏景+晚上逛老街...
+❗注：2月10日大年初一至2月17日大年初八来的宝子，一定要看看图3️⃣
+-
+🌟具体路线：
+灵隐寺➡️法喜寺➡️曲院风荷➡️平湖秋月➡️白堤➡️断桥➡️三潭印月➡️花港观鱼➡️雷峰塔➡️河坊街&南宋御街
+-
+🌟具体打卡点：
+🔸飞来峰：看石窟造像（💰45）
+🔸灵隐寺：龙年万事大吉（💰30）
+🔸法喜寺：龙年桃花满满（💰10）吃斋饭（💰5）
+❗注：🚌公交：上天竺公交站（103路或1314路）
+-
+🔸曲院风荷：💰免费
+🔸孤山公园（坠美转角→西泠印社→平湖秋月→白堤→断桥）：
+曲院风荷出来后，沿北山街步行至孤山路，终点为西湖游船-少年宫码头（以上景点💰免费）
+-
+🔸三潭印月（💰70，含登岛门票）：
+从少年宫码头坐画舫船出发，记得带上1r纸币，拍照打卡实景图
+-
+🔸花港观鱼:看冬季的西湖西南一角美景（💰免费）,沿苏堤-南山路到“雷峰塔”
+-
+🔸雷峰塔：西湖十景之一“雷锋夕照”（💰40）
+🔸净慈寺：西湖十景之一“南屏晚钟”（💰10）
+-
+🔸河坊街&南宋御街：街道十字交汇，各类小吃为主，知味观，周萍粽子，新丰小吃……
+❗tips:优先骑行，🚌公交（139路）：净寺→胡雪岩故居，可打卡胡雪岩故居（💰20）
+-
+🌟温馨提示与建议：
+🔸自驾：要注意单双号和提前预约交通码（仅限灵隐寺区域）
+🔸绿色出行：ZFB出行必备：🚇公交地铁、🚲共享单车
+🔸吃的：特色杭帮菜：知味观、新白鹿、外婆家等，价格都很平价~
+🔸住的：住靠近地铁或公交附近（湖滨&武林商圈、黄龙体育中心、西溪路等）
+-</text>
+</view>
+
+
+<!-- 底部栏 -->
+<view class="bottom-bar">
+  <!-- 喜欢按钮 -->
+  <view class="like-button" bindtap="like">
+    <image src="{{likeIcon}}" class="icon-like"></image>
+    <text class="text-like">喜欢</text>
+  </view>
+  
+  <!-- 收藏按钮 -->
+  <view class="collect-button" bindtap="collect">
+    <image src="{{collectIcon}}" class="icon-collect"></image>
+    <text class="text-collect">收藏</text>
+  </view>
+</view>
